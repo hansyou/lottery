@@ -1,0 +1,67 @@
+/* ========================================
+   结果面板样式
+   ======================================== */
+
+/* 结果内容 */
+.result-content {
+    margin: 30px 0;
+}
+
+/* 单个奖项结果 */
+.result-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff5f5 0%, #fff0f6 100%);
+    border-radius: 15px;
+    border-left: 5px solid #e91e63;
+}
+
+.result-section h3 {
+    color: #e91e63;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.result-section .winners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.result-section .winner {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #e91e63;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(233, 30, 99, 0.15);
+}
+
+.no-winners {
+    color: #999;
+    font-style: italic;
+}
+
+/* 操作按钮 */
+.result-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.result-actions .btn {
+    width: auto;
+    min-width: 150px;
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+    .result-actions {
+        flex-direction: column;
+    }
+
+    .result-actions .btn {
+        width: 100%;
+    }
+}

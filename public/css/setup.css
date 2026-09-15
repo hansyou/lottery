@@ -1,0 +1,88 @@
+/* ========================================
+   设置面板样式
+   ======================================== */
+
+/* 奖项列表样式 */
+.prize-list {
+    margin-bottom: 15px;
+}
+
+.prize-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.prize-item input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.prize-item input:focus {
+    outline: none;
+    border-color: #e91e63;
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+}
+
+.prize-item .prize-quantity {
+    width: 80px;
+    text-align: center;
+    flex: none;
+}
+
+.prize-item .remove-prize {
+    background: #ff5252;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.prize-item .remove-prize:hover {
+    background: #d32f2f;
+    transform: scale(1.1);
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+    .prize-item {
+        flex-wrap: wrap;
+    }
+
+    .prize-item input {
+        width: 100%;
+    }
+
+    .prize-item .prize-quantity {
+        width: 100%;
+    }
+
+    .prize-item .remove-prize {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .prize-item {
+        position: relative;
+        padding-right: 50px;
+    }
+}

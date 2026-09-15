@@ -1,0 +1,31 @@
+<div id="lotteryPanel" class="panel lottery-panel">
+    <h1 id="lotteryTitle">婚礼抽奖</h1>
+
+    <div class="lottery-info">
+        <div class="current-prize">
+            <span class="label">当前奖项：</span>
+            <span id="currentPrizeName" class="prize-name"></span>
+        </div>
+        <div class="remaining">
+            <span class="label">剩余名额：</span>
+            <span id="remainingCount">0</span>
+        </div>
+    </div>
+
+    <div class="roller-container">
+        <div id="nameRoller" class="name-roller">
+            <span>准备开始</span>
+        </div>
+    </div>
+
+    <div class="lottery-controls">
+        <button id="rollBtn" class="btn btn-primary btn-large">🎲 抽奖</button>
+        <button id="nextPrizeBtn" class="btn btn-secondary" style="display: none;">下一个奖项</button>
+        <button id="finishBtn" class="btn btn-success" style="display: none;">完成并查看结果</button>
+    </div>
+
+    <div id="currentWinners" class="current-winners">
+        <h3>本轮中奖名单</h3>
+        <div id="winnersList" class="winners-list"></div>
+    </div>
+</div>
